@@ -1,0 +1,7 @@
+SetEnv config fish
+SetEnv icons /var/www/html/icon_cache_fish
+SetEnv tmpFs /tmp
+SetEnv dbUser fish
+SetEnv dbPass fish
+SetEnv dbName fish
+SetEnv dbPort 5432

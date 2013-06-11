@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://64.72.74.123:80/geoserver/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd">
+<WMT_MS_Capabilities version="1.1.1" updateSequence="749">
+  <Service>
+    <Name>OGC:WMS</Name>
+    <Title>MARACOOS GeoServer WMS</Title>
+    <Abstract>MARACOOS GeoServer WMS for Spatial Data</Abstract>
+    <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>GEOSERVER</Keyword>
+      <Keyword>MARACOOS</Keyword>
+      <Keyword>IOOS</Keyword>
+      <Keyword>Fisheries</Keyword>
+      <Keyword>biology</Keyword>
+    </KeywordList>
+    <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://geoserver.sourceforge.net/html/index.php"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>Kyle Wilcox</ContactPerson>
+        <ContactOrganization>MARACOOS</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>DMAC</ContactPosition>
+      <ContactAddress>
+        <AddressType>Work</AddressType>
+        <Address>55 Village Square Dr</Address>
+        <City>South Kingstown</City>
+        <StateOrProvince>RI</StateOrProvince>
+        <PostCode>02852</PostCode>
+        <Country>USA</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>kwilcox@asascience.com</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>NONE</Fees>
+    <AccessConstraints>NONE</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom xml</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/openlayers</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss xml</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml</Format>
+        <Format>application/vnd.google-earth.kml xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>application/vnd.google-earth.kmz xml</Format>
+        <Format>application/vnd.google-earth.kmz+xml</Format>
+        <Format>application/vnd.google-earth.kmz;mode=networklink</Format>
+        <Format>atom</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/gif;subtype=animated</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png8</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg</Format>
+        <Format>image/svg xml</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>kml</Format>
+        <Format>kmz</Format>
+        <Format>openlayers</Format>
+        <Format>rss</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?SERVICE=WMS&amp;"/>
+            </Get>
+            <Post>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?SERVICE=WMS&amp;"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+      <DescribeLayer>
+        <Format>application/vnd.ogc.wms_xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </DescribeLayer>
+      <GetLegendGraphic>
+        <Format>image/png</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/gif</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetLegendGraphic>
+      <GetStyles>
+        <Format>application/vnd.ogc.sld+xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?SERVICE=WMS&amp;"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetStyles>
+    </Request>
+    <Exception>
+      <Format>application/vnd.ogc.se_xml</Format>
+      <Format>application/vnd.ogc.se_inimage</Format>
+    </Exception>
+    <UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"/>
+    <Layer>
+      <Title>MARACOOS GeoServer WMS</Title>
+      <Abstract>MARACOOS GeoServer WMS for Spatial Data</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <SRS>EPSG:3857</SRS>
+      <SRS>EPSG:4326</SRS>
+      <SRS>EPSG:900913</SRS>
+      <LatLonBoundingBox minx="-76.6666738510132" miny="34.499994119008" maxx="-65.1666738510132" maxy="45.4999941190083"/>
+      <BoundingBox SRS="EPSG:4326" minx="-76.6666738510132" miny="34.499994119008" maxx="-65.1666738510132" maxy="45.4999941190083"/>
+      <BoundingBox SRS="EPSG:900913" minx="-8534495.093908772" miny="4096138.246067659" maxx="-7254320.949786125" maxy="5700581.798375994"/>
+      <BoundingBox SRS="EPSG:3857" minx="-8534495.093908772" miny="4096138.246067659" maxx="-7254320.949786125" maxy="5700581.798375994"/>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.butterfish.grid.latest</Name>
+        <Title>byCatch.butterfish.grid.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>by_catch_butterfish_grid_latest</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-76.6666738510132" miny="34.499994119008" maxx="-65.1666738510132" maxy="45.4999941190083"/>
+        <BoundingBox SRS="EPSG:4326" minx="-76.6666738510132" miny="34.499994119008" maxx="-65.1666738510132" maxy="45.4999941190083"/>
+        <BoundingBox SRS="EPSG:900913" minx="-8534495.093908772" miny="4096138.246067659" maxx="-7254320.949786125" maxy="5700581.798375994"/>
+        <BoundingBox SRS="EPSG:3857" minx="-8534495.093908772" miny="4096138.246067659" maxx="-7254320.949786125" maxy="5700581.798375994"/>
+        <Style>
+          <Name>grayLine</Name>
+          <Title>Default Line</Title>
+          <Abstract>A sample style that draws a line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.butterfish.grid.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.butterfish.latest</Name>
+        <Title>byCatch.butterfish.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>by_catch_butterfish_latest</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-76.6666738510132" miny="34.499994119008" maxx="-65.1666738510132" maxy="45.4999941190083"/>
+        <BoundingBox SRS="EPSG:4326" minx="-76.6666738510132" miny="34.499994119008" maxx="-65.1666738510132" maxy="45.4999941190083"/>
+        <BoundingBox SRS="EPSG:900913" minx="-8534495.093908772" miny="4096138.246067659" maxx="-7254320.949786125" maxy="5700581.798375994"/>
+        <BoundingBox SRS="EPSG:3857" minx="-8534495.093908772" miny="4096138.246067659" maxx="-7254320.949786125" maxy="5700581.798375994"/>
+        <Style>
+          <Name>byCatch.butterfish.poly</Name>
+          <Title>bycatch</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.butterfish.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.riverHerring.bottomTrawl.grid.latest</Name>
+        <Title>byCatch.riverHerring.bottomTrawl.grid.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>by_catch_river_herring_bottom_trawl_rhode_island_grid_latest</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-72.0" miny="41.0" maxx="-71.0" maxy="41.5010868091654"/>
+        <BoundingBox SRS="EPSG:4326" minx="-72.0" miny="41.0" maxx="-71.0" maxy="41.5010868091654"/>
+        <BoundingBox SRS="EPSG:900913" minx="-8015003.337115697" miny="5012341.663847514" maxx="-7903683.846322423" maxy="5086535.186284409"/>
+        <BoundingBox SRS="EPSG:3857" minx="-8015003.337115697" miny="5012341.663847514" maxx="-7903683.846322423" maxy="5086535.186284409"/>
+        <Style>
+          <Name>grayLine</Name>
+          <Title>Default Line</Title>
+          <Abstract>A sample style that draws a line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.riverHerring.bottomTrawl.grid.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.riverHerring.bottomTrawl.latest</Name>
+        <Title>byCatch.riverHerring.bottomTrawl.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>by_catch_river_herring_bottom_trawl_rhode_island_latest</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-72.0" miny="41.0" maxx="-71.0" maxy="41.5010868091655"/>
+        <BoundingBox SRS="EPSG:4326" minx="-72.0" miny="41.0" maxx="-71.0" maxy="41.5010868091655"/>
+        <BoundingBox SRS="EPSG:900913" minx="-8015003.337115697" miny="5012341.663847514" maxx="-7903683.846322423" maxy="5086535.186284424"/>
+        <BoundingBox SRS="EPSG:3857" minx="-8015003.337115697" miny="5012341.663847514" maxx="-7903683.846322423" maxy="5086535.186284424"/>
+        <Style>
+          <Name>byCatch.poly</Name>
+          <Title>bycatch</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.riverHerring.bottomTrawl.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.riverHerring.midWaterTrawl.area2.grid.latest</Name>
+        <Title>byCatch.riverHerring.midWaterTrawl.area2.grid.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>by_catch_river_herring_midwater_trawl_area2_grid_latest</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-74.0" miny="39.5" maxx="-70.1667" maxy="41.5036528830106"/>
+        <BoundingBox SRS="EPSG:4326" minx="-74.0" miny="39.5" maxx="-70.1667" maxy="41.5036528830106"/>
+        <BoundingBox SRS="EPSG:900913" minx="-8237642.318702244" miny="4793547.459104806" maxx="-7810921.314644389" maxy="5086916.603342417"/>
+        <BoundingBox SRS="EPSG:3857" minx="-8237642.318702244" miny="4793547.459104806" maxx="-7810921.314644389" maxy="5086916.603342417"/>
+        <Style>
+          <Name>grayLine</Name>
+          <Title>Default Line</Title>
+          <Abstract>A sample style that draws a line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.riverHerring.midWaterTrawl.area2.grid.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.riverHerring.midWaterTrawl.area2.latest</Name>
+        <Title>byCatch.riverHerring.midWaterTrawl.area2.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>by_catch_river_herring_midwater_trawl_area2_latest</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-74.0" miny="39.5" maxx="-70.1667" maxy="41.5036528830106"/>
+        <BoundingBox SRS="EPSG:4326" minx="-74.0" miny="39.5" maxx="-70.1667" maxy="41.5036528830106"/>
+        <BoundingBox SRS="EPSG:900913" minx="-8237642.318702244" miny="4793547.459104806" maxx="-7810921.314644389" maxy="5086916.603342417"/>
+        <BoundingBox SRS="EPSG:3857" minx="-8237642.318702244" miny="4793547.459104806" maxx="-7810921.314644389" maxy="5086916.603342417"/>
+        <Style>
+          <Name>byCatch.poly</Name>
+          <Title>bycatch</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.riverHerring.midWaterTrawl.area2.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.riverHerring.midWaterTrawl.capecod.grid.latest</Name>
+        <Title>byCatch.riverHerring.midWaterTrawl.capecod.grid.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>by_catch_river_herring_midwater_trawl_capecod_grid_latest</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-70.0" miny="41.5" maxx="-69.5" maxy="42.0836023036494"/>
+        <BoundingBox SRS="EPSG:4326" minx="-70.0" miny="41.5" maxx="-69.5" maxy="42.0836023036494"/>
+        <BoundingBox SRS="EPSG:900913" minx="-7792364.355529149" miny="5086373.649287362" maxx="-7736704.610132514" maxy="5173510.90192505"/>
+        <BoundingBox SRS="EPSG:3857" minx="-7792364.355529149" miny="5086373.649287362" maxx="-7736704.610132514" maxy="5173510.90192505"/>
+        <Style>
+          <Name>grayLine</Name>
+          <Title>Default Line</Title>
+          <Abstract>A sample style that draws a line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.riverHerring.midWaterTrawl.capecod.grid.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.riverHerring.midWaterTrawl.capecod.latest</Name>
+        <Title>byCatch.riverHerring.midWaterTrawl.capecod.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>by_catch_river_herring_midwater_trawl_capecod_latest</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-70.0" miny="41.5" maxx="-69.5" maxy="42.0836023036494"/>
+        <BoundingBox SRS="EPSG:4326" minx="-70.0" miny="41.5" maxx="-69.5" maxy="42.0836023036494"/>
+        <BoundingBox SRS="EPSG:900913" minx="-7792364.355529149" miny="5086373.649287362" maxx="-7736704.610132514" maxy="5173510.90192505"/>
+        <BoundingBox SRS="EPSG:3857" minx="-7792364.355529149" miny="5086373.649287362" maxx="-7736704.610132514" maxy="5173510.90192505"/>
+        <Style>
+          <Name>byCatch.poly</Name>
+          <Title>bycatch</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.riverHerring.midWaterTrawl.capecod.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.scallopYellowtail.area1.grid.latest</Name>
+        <Title>byCatch.scallopYellowtail.area1.grid.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>by_catch_scallop_yellowtail_area1_grid_latest</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-69.0143134706952" miny="40.9264866224946" maxx="-68.4999908310544" maxy="41.3927262720655"/>
+        <BoundingBox SRS="EPSG:4326" minx="-69.0143134706952" miny="40.9264866224946" maxx="-68.4999908310544" maxy="41.3927262720655"/>
+        <BoundingBox SRS="EPSG:900913" minx="-7682638.23300515" miny="5001504.496908376" maxx="-7625384.098656885" maxy="5070442.421431045"/>
+        <BoundingBox SRS="EPSG:3857" minx="-7682638.23300515" miny="5001504.496908376" maxx="-7625384.098656885" maxy="5070442.421431045"/>
+        <Style>
+          <Name>grayLine</Name>
+          <Title>Default Line</Title>
+          <Abstract>A sample style that draws a line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.scallopYellowtail.area1.grid.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.scallopYellowtail.area1.latest</Name>
+        <Title>byCatch.scallopYellowtail.area1.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>by_catch_scallop_yellowtail_area1_latest</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-68.96" miny="40.952" maxx="-68.518" maxy="41.39"/>
+        <BoundingBox SRS="EPSG:4326" minx="-68.96" miny="40.952" maxx="-68.518" maxy="41.39"/>
+        <BoundingBox SRS="EPSG:900913" minx="-7676592.085104145" miny="5005264.25073481" maxx="-7627388.870173519" maxy="5070037.885480554"/>
+        <BoundingBox SRS="EPSG:3857" minx="-7676592.085104145" miny="5005264.25073481" maxx="-7627388.870173519" maxy="5070037.885480554"/>
+        <Style>
+          <Name>byCatch.point</Name>
+          <Title>bycatch</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.scallopYellowtail.area1.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.scallopYellowtail.area2.grid.latest</Name>
+        <Title>byCatch.scallopYellowtail.area2.grid.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>by_catch_scallop_yellowtail_area2_grid_latest</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-67.3333333333333" miny="41.0000000000004" maxx="-66.4133333333348" maxy="41.5000000000005"/>
+        <BoundingBox SRS="EPSG:4326" minx="-67.3333333333333" miny="41.0000000000004" maxx="-66.4133333333348" maxy="41.5000000000005"/>
+        <BoundingBox SRS="EPSG:900913" minx="-7495512.380080416" miny="5012341.663847576" maxx="-7393098.448550772" maxy="5086373.649287432"/>
+        <BoundingBox SRS="EPSG:3857" minx="-7495512.380080416" miny="5012341.663847576" maxx="-7393098.448550772" maxy="5086373.649287432"/>
+        <Style>
+          <Name>grayLine</Name>
+          <Title>Default Line</Title>
+          <Abstract>A sample style that draws a line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.scallopYellowtail.area2.grid.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.scallopYellowtail.area2.latest</Name>
+        <Title>byCatch.scallopYellowtail.area2.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>by_catch_scallop_yellowtail_area2_latest</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-69.02" miny="40.9166666666671" maxx="-66.466" maxy="41.468"/>
+        <BoundingBox SRS="EPSG:4326" minx="-69.02" miny="40.9166666666671" maxx="-66.466" maxy="41.468"/>
+        <BoundingBox SRS="EPSG:900913" minx="-7683271.254551741" miny="5000057.775661429" maxx="-7398961.275065719" maxy="5081618.5696589425"/>
+        <BoundingBox SRS="EPSG:3857" minx="-7683271.254551741" miny="5000057.775661429" maxx="-7398961.275065719" maxy="5081618.5696589425"/>
+        <Style>
+          <Name>byCatch.point</Name>
+          <Title>bycatch</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.scallopYellowtail.area2.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.scallopYellowtail.nantucket.grid.latest</Name>
+        <Title>byCatch.scallopYellowtail.nantucket.grid.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>features</Keyword>
+          <Keyword>by_catch_scallop_yellowtail_nantucket_grid_latest</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-69.4887376589382" miny="40.4996587843772" maxx="-68.9973671040447" maxy="40.8323413864714"/>
+        <BoundingBox SRS="EPSG:4326" minx="-69.4887376589382" miny="40.4996587843772" maxx="-68.9973671040447" maxy="40.8323413864714"/>
+        <BoundingBox SRS="EPSG:900913" minx="-7735450.892060374" miny="4938819.223715297" maxx="-7680751.772098821" maxy="4987643.420590889"/>
+        <BoundingBox SRS="EPSG:3857" minx="-7735450.892060374" miny="4938819.223715297" maxx="-7680751.772098821" maxy="4987643.420590889"/>
+        <Style>
+          <Name>grayLine</Name>
+          <Title>Default Line</Title>
+          <Abstract>A sample style that draws a line</Abstract>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.scallopYellowtail.nantucket.grid.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <!--WKT definition of this CRS:
+GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]-->
+      <Layer queryable="1">
+        <Name>byCatch.scallopYellowtail.nantucket.latest</Name>
+        <Title>byCatch.scallopYellowtail.nantucket.latest</Title>
+        <Abstract/>
+        <KeywordList>
+          <Keyword>by_catch_scallop_yellowtail_nantucket_latest</Keyword>
+          <Keyword>features</Keyword>
+        </KeywordList>
+        <SRS>EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-69.443" miny="40.511" maxx="-69.014" maxy="40.819"/>
+        <BoundingBox SRS="EPSG:4326" minx="-69.443" miny="40.511" maxx="-69.014" maxy="40.819"/>
+        <BoundingBox SRS="EPSG:900913" minx="-7730359.399157296" miny="4940479.650802922" maxx="-7682603.337606981" maxy="4985680.751111425"/>
+        <BoundingBox SRS="EPSG:3857" minx="-7730359.399157296" miny="4940479.650802922" maxx="-7682603.337606981" maxy="4985680.751111425"/>
+        <Style>
+          <Name>byCatch.point</Name>
+          <Title>bycatch</Title>
+          <Abstract/>
+          <LegendURL width="20" height="20">
+            <Format>image/png</Format>
+            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://64.72.74.123:80/geoserver/maracoos/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=byCatch.scallopYellowtail.nantucket.latest"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMT_MS_Capabilities>
